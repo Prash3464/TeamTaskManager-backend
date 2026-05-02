@@ -76,8 +76,8 @@ class Login(APIView):
                 key='access_token',
                 value=token['access'],
                 httponly=True,
-                secure=False, # true if production
-                samesite='Lax',
+                secure=True, # true if production
+                samesite='None',
                 # max_age=86400,
                 path='/'
             )
