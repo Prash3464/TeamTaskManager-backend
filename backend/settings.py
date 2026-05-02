@@ -143,7 +143,7 @@ REST_FRAMEWORK = {
 CSP_CONNECT_SRC = ("'self'", "https://teamtaskmanager-backend.onrender.com", "http://127.0.0.1:8000")
 
 CORS_ALLOWED_ORIGINS = [
-    'https://web-production-febcc.up.railway.app',
+    'https://teamtaskmanager-backend.onrender.com',
     "http://127.0.0.1:5500",
     "http://localhost:5500",
     "http://localhost:3000", # React ke liye
