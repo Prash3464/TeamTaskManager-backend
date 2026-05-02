@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)_@ni9l*bq!wr6&58u#&s!4p)n)q&j_79x!-8(vcybaulz+ohq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-febcc.up.railway.app','localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL')
+        default=os.environ.get('DATABASE_URL'),
     )
 }
 
@@ -136,6 +136,7 @@ REST_FRAMEWORK = {
 
 
 CORS_ALLOWED_ORIGINS = [
+    'https://web-production-febcc.up.railway.app',
     "http://127.0.0.1:5500",
     "http://localhost:5500",
     "http://localhost:3000", # React ke liye
