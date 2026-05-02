@@ -123,6 +123,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Ye line add karein:
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# WhiteNoise ke liye ye line bhi zaroori hai:
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # enable to jwt authentication
 REST_FRAMEWORK = {
