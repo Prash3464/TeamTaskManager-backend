@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Database (Railway par apna database hoga, local nahi)
+db.sqlite3
+
+# Environment variables (Sensitive info)
+.env
+
+# OS files
+.DS_Store
