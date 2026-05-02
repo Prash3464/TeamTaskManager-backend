@@ -78,7 +78,7 @@ class Login(APIView):
                 httponly=True,
                 secure=True, # true if production
                 samesite='None',
-                # max_age=86400,
+                max_age=86400, # age of api 1 day
                 path='/'
             )
             return response
@@ -92,6 +92,7 @@ class Logout(APIView):
             'access_token',
             path = '/',
             samesite = 'None',
+            extra_params={'secure': True}
         )
         return response
 
