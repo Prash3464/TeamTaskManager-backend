@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)_@ni9l*bq!wr6&58u#&s!4p)n)q&j_79x!-8(vcybaulz+ohq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','127.0.0.1:5500','teamtaskmanager-backend.onrender.com']
+ALLOWED_HOSTS = ['*','127.0.0.1:5500','teamtaskmanager-backend.onrender.com','teamtaskmanager-frontend-production-5c56.up.railway.app']
 
 
 # Application definition
@@ -144,12 +144,17 @@ REST_FRAMEWORK = {
 CSP_CONNECT_SRC = ("'self'", "https://teamtaskmanager-backend.onrender.com", "http://127.0.0.1:8000")
 
 CORS_ALLOWED_ORIGINS = [
-    'https://teamtaskmanager-backend.onrender.com',
+    "https://teamtaskmanager-frontend-production-5c56.up.railway.app",
     "http://127.0.0.1:5500",
     "http://localhost:5500",
     "http://localhost:3000", # React ke liye
     "http://192.168.137.1:5500",
     "http://10.94.156.38:5500"
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://teamtaskmanager-frontend-production-5c56.up.railway.app",
+    "https://teamtaskmanager-backend.onrender.com"
 ]
 
 # CRITICAL: Kyunki hum JWT Cookies use kar rahe hain
