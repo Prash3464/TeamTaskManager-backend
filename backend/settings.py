@@ -144,6 +144,7 @@ REST_FRAMEWORK = {
 CSP_CONNECT_SRC = ("'self'", "https://teamtaskmanager-backend.onrender.com", "http://127.0.0.1:8000")
 
 CORS_ALLOWED_ORIGINS = [
+    "https://prash3464.github.io/TeamTaskManager-Frontend",
     "https://teamtaskmanager-frontend-production-5c56.up.railway.app",
     "http://127.0.0.1:5500",
     "http://localhost:5500",
